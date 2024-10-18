@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plumber services</title>
+
+  <link rel="stylesheet" href="./output.css">
+  
+  <!-- Tailwind CSS for layout -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <!-- Animate.css for animations -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+  
+  
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- Content above the box -->
+  <div class="py-12"></div>
+
+  <!-- Our Services box -->
+  <div id="assignment" class="relative mx-8 my-12 shadow-lg w-3/5 h-auto mx-auto bg-white flex flex-col overflow-hidden">
+
+    <!-- Background diagonal split -->
+    <div class="diagonal-half bg-darkblue absolute w-full h-full top-0 left-0"></div>
+
+    <!-- Our Services title -->
+    <div class="relative z-20 text-white p-4 font-mono font-bold uppercase text-4xl ml-10 mt-2 mb-4">
+      Our Services
+    </div>
+
+    <!--cards container-->
+    <div class="relative z-20 text-gray-800 text-center flex flex-wrap justify-center pt-8 pb-4">
+
+      <!-- Card 1 -->
+      <div class="card relative bg-white w-48 h-52 p-4 shadow-lg hover:shadow-2xl m-1">
+        <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 border-2 rounded-full w-16 h-16 flex items-center justify-center" style="border-color: #0f0355; background-color: white;">
+          <i class="fa-solid fa-wrench icon text-3xl"></i>
+        </div>
+        <h3 class="text-sm font-bold mt-6">Emergency Plumbing Service</h3>
+        <p class="text-xs font-semibold mt-2">Our plumbers are ready to go 24/7 for emergencies - including nights, weekends, and holidays.</p>
+        <p class="to-darkblue mt-2 cursor-pointer font-semibold text-sm uppercase whitespace-nowrap">Explore This Service ></p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card relative bg-white w-48 h-52 p-4 shadow-lg hover:shadow-2xl m-1">
+        <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 border-2 rounded-full w-16 h-16 flex items-center justify-center" style="border-color: #0f0355; background-color: white;">
+          <i class="fa-solid fa-water text-3xl"></i>
+        </div>
+        <h3 class="text-sm font-bold mt-6">Plumbing and Drains</h3>
+        <p class="text-xs font-semibold mt-2">As the largest plumbing and drain service company, we make thousands of repairs every day.</p>
+        <p class="to-darkblue mt-2 cursor-pointer font-semibold text-sm uppercase whitespace-nowrap">Explore This Service ></p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card relative bg-white w-48 h-52 p-4 shadow-lg hover:shadow-2xl m-1">
+        <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 border-2 rounded-full w-16 h-16 flex items-center justify-center" style="border-color: #0f0355; background-color: white;">
+          <i class="fa-solid fa-droplet text-3xl"></i>
+        </div>
+        <h3 class="text-sm font-bold mt-6">Water Damage</h3>
+        <p class="text-xs font-semibold mt-2">Our teams are equipped with state-of-the-art water extraction and cleanup equipment.</p>
+        <p class="to-darkblue mt-2 cursor-pointer font-semibold text-sm uppercase whitespace-nowrap">Explore This Service ></p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card relative bg-white w-48 h-52 p-4 shadow-lg hover:shadow-2xl m-1">
+        <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 border-2 rounded-full w-16 h-16 flex items-center justify-center" style="border-color: #0f0355; background-color: white;">
+          <i class="fa-solid fa-temperature-half text-3xl"></i>
+        </div>
+        <h3 class="text-sm font-bold mt-6">Water Heater</h3>
+        <p class="text-xs font-semibold mt-2">Trust Roto-Rooter for repair and replacement of gas, electric, and tankless water heaters.</p>
+        <p class="to-darkblue mt-2 cursor-pointer font-semibold text-sm uppercase whitespace-nowrap">Explore This Service ></p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Include Animate.css and custom animation behavior -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
+  <script>
+    // Add event listeners for rotation on hover using animate.css
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        card.classList.add('animate__animated', 'animate__rotateIn');
+      });
+      card.addEventListener('mouseleave', () => {
+        card.classList.remove('animate__animated', 'animate__rotateIn');
+      });
+    });
+  </script>
+
+  <!-- Content below the box -->
+  <div class="py-8"></div>
+
+</body>
+</html>
